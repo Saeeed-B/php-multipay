@@ -109,7 +109,7 @@ abstract class Driver implements DriverInterface
      *
      * @return string
      */
-    abstract public function purchase();
+    abstract public function purchase($order_id);
 
     /**
      * Pay the invoice

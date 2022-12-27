@@ -32,7 +32,7 @@ interface DriverInterface
      *
      * @return string
      */
-    public function purchase();
+    public function purchase($order_id);
 
     /**
      * Pay the purchase
