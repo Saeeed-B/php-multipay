@@ -7,6 +7,7 @@ use Shetabit\Multipay\Traits\HasDetail;
 
 class Invoice
 {
+    
     use HasDetail;
 
     /**
