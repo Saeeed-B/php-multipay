@@ -1,8 +1,8 @@
 <?php
 
-namespace Shetabit\Multipay\Contracts;
+namespace Saeeed\PHPMultipay\Contracts;
 
-use Shetabit\Multipay\RedirectionForm;
+use Saeeed\PHPMultipay\RedirectionForm;
 
 interface DriverInterface
 {

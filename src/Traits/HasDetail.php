@@ -1,6 +1,6 @@
 <?php
 
-namespace Shetabit\Multipay\Traits;
+namespace Saeeed\PHPMultipay\Traits;
 
 trait HasDetail
 {

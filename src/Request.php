@@ -1,6 +1,6 @@
 <?php
 
-namespace Shetabit\Multipay;
+namespace Saeeed\PHPMultipay;
 
 class Request
 {

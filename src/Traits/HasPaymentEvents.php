@@ -1,8 +1,8 @@
 <?php
 
-namespace Shetabit\Multipay\Traits;
+namespace Saeeed\PHPMultipay\Traits;
 
-use Shetabit\Multipay\EventEmitter;
+use Saeeed\PHPMultipay\EventEmitter;
 
 trait HasPaymentEvents
 {

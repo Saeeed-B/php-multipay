@@ -14,12 +14,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Multipay\\": "src"
+            "Saeeed\\PHPMultipay\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Multipay\\Tests\\": "tests"
+            "Saeeed\\PHPMultipay\\Tests\\": "tests"
         }
     },
     "scripts": {

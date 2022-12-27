@@ -1,16 +1,16 @@
 <?php
 
-namespace Shetabit\Multipay\Drivers\Vandar;
+namespace Saeeed\PHPMultipay\Drivers\Vandar;
 
 use GuzzleHttp\Client;
-use Shetabit\Multipay\Abstracts\Driver;
-use Shetabit\Multipay\Contracts\ReceiptInterface;
-use Shetabit\Multipay\Exceptions\InvalidPaymentException;
-use Shetabit\Multipay\Exceptions\PurchaseFailedException;
-use Shetabit\Multipay\Invoice;
-use Shetabit\Multipay\Receipt;
-use Shetabit\Multipay\RedirectionForm;
-use Shetabit\Multipay\Request;
+use Saeeed\PHPMultipay\Abstracts\Driver;
+use Saeeed\PHPMultipay\Contracts\ReceiptInterface;
+use Saeeed\PHPMultipay\Exceptions\InvalidPaymentException;
+use Saeeed\PHPMultipay\Exceptions\PurchaseFailedException;
+use Saeeed\PHPMultipay\Invoice;
+use Saeeed\PHPMultipay\Receipt;
+use Saeeed\PHPMultipay\RedirectionForm;
+use Saeeed\PHPMultipay\Request;
 
 class Vandar extends Driver
 {
@@ -58,7 +58,7 @@ class Vandar extends Driver
     /**
      * @return string
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Shetabit\Multipay\Exceptions\PurchaseFailedException
+     * @throws \Saeeed\PHPMultipay\Exceptions\PurchaseFailedException
      */
     public function purchase()
     {
@@ -107,7 +107,7 @@ class Vandar extends Driver
     }
 
     /**
-     * @return \Shetabit\Multipay\RedirectionForm
+     * @return \Saeeed\PHPMultipay\RedirectionForm
      */
     public function pay(): RedirectionForm
     {
@@ -120,7 +120,7 @@ class Vandar extends Driver
      * @return ReceiptInterface
      *
      * @throws \GuzzleHttp\Exception\GuzzleException
-     * @throws \Shetabit\Multipay\Exceptions\InvalidPaymentException
+     * @throws \Saeeed\PHPMultipay\Exceptions\InvalidPaymentException
      */
     public function verify(): ReceiptInterface
     {
@@ -191,7 +191,7 @@ class Vandar extends Driver
 
     /**
      * @param $message
-     * @throws \Shetabit\Multipay\Exceptions\InvalidPaymentException
+     * @throws \Saeeed\PHPMultipay\Exceptions\InvalidPaymentException
      */
     protected function notVerified($message)
     {

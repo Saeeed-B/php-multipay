@@ -1,14 +1,14 @@
 <?php
 
-namespace Shetabit\Multipay\Drivers\Walleta;
+namespace Saeeed\PHPMultipay\Drivers\Walleta;
 
 use GuzzleHttp\Client;
-use Shetabit\Multipay\Abstracts\Driver;
-use Shetabit\Multipay\Exceptions\PurchaseFailedException;
-use Shetabit\Multipay\Contracts\ReceiptInterface;
-use Shetabit\Multipay\Invoice;
-use Shetabit\Multipay\Receipt;
-use Shetabit\Multipay\RedirectionForm;
+use Saeeed\PHPMultipay\Abstracts\Driver;
+use Saeeed\PHPMultipay\Exceptions\PurchaseFailedException;
+use Saeeed\PHPMultipay\Contracts\ReceiptInterface;
+use Saeeed\PHPMultipay\Invoice;
+use Saeeed\PHPMultipay\Receipt;
+use Saeeed\PHPMultipay\RedirectionForm;
 
 class Walleta extends Driver
 {

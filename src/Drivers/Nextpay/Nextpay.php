@@ -1,16 +1,16 @@
 <?php
 
-namespace Shetabit\Multipay\Drivers\Nextpay;
+namespace Saeeed\PHPMultipay\Drivers\Nextpay;
 
 use GuzzleHttp\Client;
-use Shetabit\Multipay\Abstracts\Driver;
-use Shetabit\Multipay\Exceptions\InvalidPaymentException;
-use Shetabit\Multipay\Exceptions\PurchaseFailedException;
-use Shetabit\Multipay\Contracts\ReceiptInterface;
-use Shetabit\Multipay\Invoice;
-use Shetabit\Multipay\Receipt;
-use Shetabit\Multipay\RedirectionForm;
-use Shetabit\Multipay\Request;
+use Saeeed\PHPMultipay\Abstracts\Driver;
+use Saeeed\PHPMultipay\Exceptions\InvalidPaymentException;
+use Saeeed\PHPMultipay\Exceptions\PurchaseFailedException;
+use Saeeed\PHPMultipay\Contracts\ReceiptInterface;
+use Saeeed\PHPMultipay\Invoice;
+use Saeeed\PHPMultipay\Receipt;
+use Saeeed\PHPMultipay\RedirectionForm;
+use Saeeed\PHPMultipay\Request;
 
 class Nextpay extends Driver
 {

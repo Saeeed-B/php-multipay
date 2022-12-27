@@ -1,13 +1,13 @@
 <?php
 
-namespace Shetabit\Multipay;
+namespace Saeeed\PHPMultipay;
 
-use Shetabit\Multipay\Contracts\DriverInterface;
-use Shetabit\Multipay\Contracts\ReceiptInterface;
-use Shetabit\Multipay\Exceptions\DriverNotFoundException;
-use Shetabit\Multipay\Exceptions\InvoiceNotFoundException;
-use Shetabit\Multipay\Traits\HasPaymentEvents;
-use Shetabit\Multipay\Traits\InteractsWithRedirectionForm;
+use Saeeed\PHPMultipay\Contracts\DriverInterface;
+use Saeeed\PHPMultipay\Contracts\ReceiptInterface;
+use Saeeed\PHPMultipay\Exceptions\DriverNotFoundException;
+use Saeeed\PHPMultipay\Exceptions\InvoiceNotFoundException;
+use Saeeed\PHPMultipay\Traits\HasPaymentEvents;
+use Saeeed\PHPMultipay\Traits\InteractsWithRedirectionForm;
 
 class Payment
 {

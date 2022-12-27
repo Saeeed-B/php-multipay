@@ -1,6 +1,6 @@
 <?php
 
-namespace Shetabit\Multipay\Exceptions;
+namespace Saeeed\PHPMultipay\Exceptions;
 
 class PurchaseFailedException extends \Exception
 {

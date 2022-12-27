@@ -1,8 +1,8 @@
 <?php
 
-namespace Shetabit\Multipay\Drivers\Pasargad\Utils;
+namespace Saeeed\PHPMultipay\Drivers\Pasargad\Utils;
 
-use Shetabit\Multipay\Drivers\Pasargad\Utils\RSA;
+use Saeeed\PHPMultipay\Drivers\Pasargad\Utils\RSA;
 
 class RSAProcessor
 {
