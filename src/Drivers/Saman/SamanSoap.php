@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Payment\Drivers\Saman;
+namespace Saeeed\PHPMultipay\Drivers\Saman;
 
 use Saeeed\PHPMultipay\Abstracts\Driver;
 use Saeeed\PHPMultipay\Exceptions\InvalidPaymentException;
