@@ -126,7 +126,7 @@ class SamanOnlinePG extends Driver
         if ($status < 0) {
             $this->notVerified($status);
         }
-        $receipt =  $this->createReceipt($data['RefNum']);
+        $receipt =  $this->createReceipt(Request::input('TraceNo'));
         $receipt->detail([
             'traceNo' => Request::input('TraceNo'),
             'referenceNo' => Request::input('RRN'),
