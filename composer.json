@@ -1,88 +1,6 @@
 {
-    "name": "shetabit/multipay",
-    "type": "library",
-    "description": "PHP Payment Gateway Integration Package",
-    "keywords": [
-        "shetabit",
-        "gateway",
-        "bank",
-        "payment",
-        "payment gateway",
-        "php payment package",
-        "php payment gateway",
-        "iranKish payment gateway",
-        "php iranKish package",
-        "php iranKish",
-        "irankish",
-        "jahanPay payment gateway",
-        "php jahanPay package",
-        "php jahanPay",
-        "jahanpay",
-        "jibit payment gateway",
-        "php jibit package",
-        "php jibit",
-        "jibit",
-        "mellat payment gateway",
-        "php mellat package",
-        "php mellat",
-        "mellat",
-        "parsian payment gateway",
-        "php parsian package",
-        "php parsian",
-        "parsian",
-        "pasargad payment gateway",
-        "php pasargad package",
-        "php pasargad",
-        "pasargad",
-        "pay payment gateway",
-        "php pay package",
-        "php pay",
-        "pay",
-        "payline payment gateway",
-        "php payline package",
-        "php payline",
-        "payline",
-        "sadad payment gateway",
-        "php sadad package",
-        "php sadad",
-        "sadad",
-        "saderat payment gateway",
-        "php saderat package",
-        "php saderat",
-        "saderat",
-        "saman payment gateway",
-        "php saman package",
-        "php saman",
-        "saman",
-        "zarinpal payment gateway",
-        "php zarinpal package",
-        "php zarinpal",
-        "zarinpal",
-        "shaparak payment gateway",
-        "php shaparak package",
-        "php shaparak",
-        "shaparak",
-        "meli payment gateway",
-        "php meli package",
-        "php meli",
-        "meli",
-        "php melli bank payment package",
-        "melli",
-        "paypal payment gateway",
-        "php paypal package",
-        "php paypal",
-        "paypal"
-    ],
-    "homepage": "https://github.com/shetabit/multipay",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mahdi Khanzadi",
-            "email": "khanzadimahdi@gmail.com",
-            "homepage": "https://github.com/shetabit",
-            "role": "Developer"
-        }
-    ],
+    "name": "saeeed/php-multipay",
+    "description": "A short description of what your package does",
     "require": {
         "php": ">=7.2",
         "nesbot/carbon": "^1.39|^2.0",
@@ -95,12 +13,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Shetabit\\Multipay\\": "src"
+            "Multipay\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Shetabit\\Multipay\\Tests\\": "tests"
+            "Multipay\\Tests\\": "tests"
         }
     },
     "scripts": {

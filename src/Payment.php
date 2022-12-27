@@ -200,7 +200,7 @@ class Payment
      *
      * @throws \Exception
      */
-    public function purchase(Invoice $invoice = null, $finalizeCallback = null)
+    public function purchase(Invoice $invoice = null,$order_id, $finalizeCallback = null)
     {
         if ($invoice) { // create new invoice
             $this->invoice($invoice);
@@ -209,7 +209,7 @@ class Payment
         $this->driverInstance = $this->getFreshDriverInstance();
 
         //purchase the invoice
-        $transactionId = $this->driverInstance->purchase();
+        $transactionId = $this->driverInstance->purchase($order_id);
         if ($finalizeCallback) {
             call_user_func_array($finalizeCallback, [$this->driverInstance, $transactionId]);
         }

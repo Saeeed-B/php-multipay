@@ -50,7 +50,7 @@ class Behpardakht extends Driver
      * @throws \SoapFault
      */
 
-    public function purchase()
+    public function purchase($order_id)
     {
         if (isset($_SERVER['SERVER_PROTOCOL']) && $_SERVER['SERVER_PROTOCOL'] == "HTTP/2.0") {
             $context = stream_context_create(
@@ -68,7 +68,7 @@ class Behpardakht extends Driver
             $soap = new \SoapClient($this->settings->apiPurchaseUrl);
         }
 
-        $response = $soap->bpPayRequest($this->preparePurchaseData());
+        $response = $soap->bpPayRequest($this->preparePurchaseData($order_id));
 
         // fault has happened in bank gateway
         if ($response->return == 21) {
@@ -215,7 +215,7 @@ class Behpardakht extends Driver
      *
      * @return array
      */
-    protected function preparePurchaseData()
+    protected function preparePurchaseData($order_id)
     {
         if (!empty($this->invoice->getDetails()['description'])) {
             $description = $this->invoice->getDetails()['description'];
@@ -233,7 +233,7 @@ class Behpardakht extends Driver
             'amount' => $this->invoice->getAmount() * 10, // convert to rial
             'localDate' => Carbon::now()->format('Ymd'),
             'localTime' => Carbon::now()->format('Gis'),
-            'orderId' => crc32($this->invoice->getUuid()),
+            'orderId' => $order_id,
             'additionalData' => $description,
             'payerId' => $payerId
         );
